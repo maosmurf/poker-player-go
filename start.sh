@@ -5,7 +5,7 @@ export GOPATH=$DIR
 export GOBIN=$DIR/bin
 
 cd $DIR
-go install -a src/player-service.go
+go install src/player-service.go
 
 $DIR/bin/player-service &
 echo $! > $DIR/go.pid
